@@ -1,0 +1,7 @@
+import os
+
+print("Memindai perangkat di jaringan lokal...\n")
+os.system("ip a")
+ip_range = input("\nMasukkan range IP target (contoh 192.168.1.0/24): ")
+print("\nMemulai pemindaian...\n")
+os.system(f"arp-scan {ip_range}")
